@@ -15,7 +15,7 @@ export class CodeService {
     })
   };
 
-  apiUrl = 'http://localhost:8080/';
+  apiUrl = 'https://bk1an.herokuapp.com/';
 
   async getUntestedCode() {
     return await this.http.get(this.apiUrl + 'api/bk/', this.httpOptions).toPromise();
