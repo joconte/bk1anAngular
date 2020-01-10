@@ -1,0 +1,80 @@
+.bkImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.codeATeste {
+  margin: 25px auto;
+  width: 280px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #E4E8EB;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.codeATeste:hover {
+  border-color: darkcyan;
+}
+
+.copy {
+  float: right;
+  color: darkcyan;
+}
+.invalid {
+  float: right;
+  color: darkred;
+}
+.valid {
+  float: right;
+  color: green;
+}
+
+.buttonBkLoose {
+  margin: 25px auto;
+  width: 280px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #E4E8EB;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonBkLoose:hover {
+  border-color: darkred;
+}
+
+.buttonBkWin {
+  margin: 25px auto;
+  width: 280px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #E4E8EB;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonBkWin:hover {
+  border-color: green;
+}
+
+.stats {
+  margin: 25px auto;
+  width: 280px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+.tooltip {
+  text-decoration:none;
+  position:relative;
+}
+.tooltip span {
+  display:none;
+}
+.tooltip:hover span {
+  display:block;
+  position:fixed;
+  overflow:hidden;
+}

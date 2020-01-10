@@ -1,0 +1,27 @@
+<div>
+<img class="bkImage" src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d4/Burger_King.svg/1200px-Burger_King.svg.png">
+  <div *ngIf="winnerCodes.length > 0"> Codes gagnants :
+    <div *ngFor="let winnerCode of winnerCodes">
+      {{winnerCode.code}}
+    </div>
+  </div>
+
+  <div class="codeATeste" (click)="copyMessage(codeValideOuiNon.code)">
+    {{codeValideOuiNon.code}}
+    <fa-icon [icon]="faCopy" class="copy"></fa-icon>
+  </div>
+<div class="buttonBkLoose" (click)="invalidCode()">
+  Code invalide
+  <fa-icon [icon]="faMinusCircle" class="invalid"></fa-icon>
+</div>
+  <div class="buttonBkWin" (click)="gagner()">
+  Code valide
+    <fa-icon [icon]="faCheckCircle" class="valid"></fa-icon>
+</div>
+</div>
+<div (document:mousemove)="onMouseMove($event)" class="tooltip">
+  <mat-progress-bar mode="determinate" [value]="(stats.tested / stats.total) * 100" ></mat-progress-bar>
+  <span #tooltipSpan id="tooltip-span">
+        Testés : {{stats.tested}}, Total : {{stats.total}}
+    </span>
+</div>
