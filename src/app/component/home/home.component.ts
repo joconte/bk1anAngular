@@ -58,7 +58,6 @@ export class HomeComponent implements OnInit {
 
   async getStats() {
     const newStats = await this.codeService.getStats() as TestedCodeResult;
-    /*
     let numberOfNewTested = 0;
     if (newStats.tested > this.stats.tested) {
       numberOfNewTested = newStats.tested - this.stats.tested;
@@ -67,7 +66,7 @@ export class HomeComponent implements OnInit {
       } else {
         this.notifier.notify('success', numberOfNewTested + ' nouveaux codes testés par les kheys !');
       }
-    }*/
+    }
     this.stats = newStats;
   }
 
